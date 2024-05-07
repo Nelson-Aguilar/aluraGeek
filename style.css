@@ -1,0 +1,240 @@
+body{
+    background-color:  #100b31;
+    
+}
+
+.encabezado {
+    background-color: #5300C8;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.encabezado img{
+        width: 25%; 
+}
+/********************************************************/
+.principal{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #100b31;
+    background-repeat: no-repeat; 
+    background-size:600px;
+    background-position: bottom right;
+}
+.productos {
+    margin: auto;
+    padding: 40px; 
+    display: flex;
+    width:80%;
+    height: 907px;
+    flex-direction: column;
+    gap: 40px;
+    overflow: scroll;
+    
+}
+
+.productos h2 {
+    color: #f6f2d1 ;
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    text-align: center;
+}
+.coleccion{
+    justify-content: center;
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.tarjeta {
+    background-color:  #5D04D9;
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 3px solid #100b31;     */
+   width: 175px;
+   /* height: 258px; */
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-wrap: wrap;
+    
+}
+
+.producto-imagen{
+    width:172px;
+    height: 170px;
+    border: 2px solid  #100b31; 
+    border-radius: 5px;
+    background-color: #100b31;
+}
+
+.tarjeta h3{
+    font-family:"IBM Plex Mono";
+    font-size:15px;
+    color: #FFFFFF ;
+    max-width:176px ;
+}
+.tarjeta h4{
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    color: #FFFFFF ;
+    font-weight: bold;
+}
+.producto-datos{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 65px;
+}
+.datos-producto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos-producto input{
+    transition: transform 0.2s ease;
+    
+}
+.datos-producto input:hover{
+    transform: scale(1.2) rotate(45deg);
+    
+    filter: brightness(0%) contrast(100%);
+}
+/*********************************************************/
+.producto{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 472px;
+    background-image: url('./imagenes/66649-2.gif');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.producto h2{
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    text-align: center;
+    color: #f6f2d1 ;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.formulario input[type=text], .formulario input[type=number]{
+    /* border: 3px solid #03318C; */
+    border-radius: 30px;
+    height: 58px;
+    box-sizing:border-box;
+    background-color: #f6f2d1 ;
+    font-family: "IBM Plex Mono";
+    border-width: 0px;
+}
+
+
+.formulario input[type=text]::placeholder,.formulario input[type=number]::placeholder{
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    color:#03318C;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.botones{
+    display: flex;
+    gap: 13px;
+}
+.formulario input[type=submit]{
+    height: 55px;
+    width: 188px;
+    border-radius: 15px;
+    background-color:  #03318C ;
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    color:#f6f2d1 ;
+    font-weight: 500;
+    border-width: 0px;
+}
+.formulario input[type=submit]:hover{
+    background-color:#100b31 ;
+    border: 3px solid #03318C ;
+}
+.mensaje-error{
+    color:rgb(255, 0, 0);
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    margin-top: -30px;
+
+}
+
+.formulario input[type=reset]{
+    height: 55px;
+    width: 188px;
+    border-radius: 15px;
+    background-color:  #f6f2d1;
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    color:#03318C ;
+    font-weight: 500;
+    border: 3px solid #03318C ;
+}
+.formulario input[type=reset]:hover{
+    background-color:#100b31 ;
+    border: 3px solid #03318C ;
+    color: #f6f2d1;
+}
+.pie{
+    background-color:  #5300C8;
+    height: 232px;    
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.pie img{
+    width: 25%;  
+}
+.pie h2{
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.pie h3{
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+@media(max-width:768px){
+.principal{
+    flex-direction:column-reverse;
+
+}
+
+.producto{
+    width: auto;
+}
+
+.productos{
+    width:auto;
+    padding: 10px;
+}
+}
+
+/* @media(min-width:1640px){
+    .principal{
+        
+        background-size:492px;
+        
+    }
+} */
